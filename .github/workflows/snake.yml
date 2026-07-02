@@ -4,11 +4,13 @@ on:
   schedule:
     - cron: "0 */12 * * *"   # 12시간마다 잔디 갱신
   workflow_dispatch:          # 수동 실행 가능
-  push:
-    branches: [main]
 
 permissions:
   contents: write
+
+concurrency:
+  group: snake
+  cancel-in-progress: true
 
 jobs:
   generate:
