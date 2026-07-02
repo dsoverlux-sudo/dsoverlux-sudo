@@ -15,6 +15,15 @@
 
 <br/><br/>
 
+<!-- 움직이는 잔디밭 — 골드 뱀이 기여 그래프를 먹으며 지나감 (GitHub Actions가 매일 자동 생성) -->
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/dsoverlux-sudo/dsoverlux-sudo/output/github-snake-dark.svg" />
+  <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/dsoverlux-sudo/dsoverlux-sudo/output/github-snake.svg" />
+  <img src="https://raw.githubusercontent.com/dsoverlux-sudo/dsoverlux-sudo/output/github-snake-dark.svg" width="100%" alt="골드 뱀이 기여 잔디를 먹는 애니메이션" />
+</picture>
+
+<br/><br/>
+
 <!-- 유일한 외부 위젯: GitHub 통계 (다크 네이비 + 골드) -->
 <img height="160" src="https://github-readme-stats.vercel.app/api?username=dsoverlux-sudo&show_icons=true&hide_border=true&title_color=E8B44A&icon_color=E8B44A&text_color=9AA6BE&bg_color=0B1120" alt="GitHub stats" />
 <img height="160" src="https://github-readme-stats.vercel.app/api/top-langs/?username=dsoverlux-sudo&layout=compact&hide_border=true&title_color=E8B44A&text_color=9AA6BE&bg_color=0B1120" alt="Top languages" />

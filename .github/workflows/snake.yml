@@ -1,0 +1,32 @@
+name: generate snake
+
+on:
+  schedule:
+    - cron: "0 */12 * * *"   # 12시간마다 잔디 갱신
+  workflow_dispatch:          # 수동 실행 가능
+  push:
+    branches: [main]
+
+permissions:
+  contents: write
+
+jobs:
+  generate:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - name: generate snake svg (gold)
+        uses: Platane/snk/svg-only@v3
+        with:
+          github_user_name: ${{ github.repository_owner }}
+          outputs: |
+            dist/github-snake-dark.svg?palette=github-dark&color_snake=#E8B44A&color_dots=#0B1120,#3a2f14,#8a6a1e,#c6972e,#F0C674
+            dist/github-snake.svg?color_snake=#E8B44A&color_dots=#f4efe0,#e7d4a3,#d8b45f,#c6972e,#E8B44A
+
+      - name: push to output branch
+        uses: crazy-max/ghaction-github-pages@v4
+        with:
+          target_branch: output
+          build_dir: dist
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
