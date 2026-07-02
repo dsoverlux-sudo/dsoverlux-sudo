@@ -1,0 +1,65 @@
+<svg width="880" height="300" viewBox="0 0 880 300" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="SoverLux 통합 시스템 지도와 운영 원칙">
+  <rect width="880" height="300" rx="20" fill="#0E1526"/>
+
+  <text x="32" y="44" font-family="Playfair Display, Georgia, serif" font-size="20" font-weight="700" fill="#F4F6FB">지금 만드는 것 — <tspan fill="#E8B44A">Total Solution</tspan></text>
+  <text x="32" y="66" font-family="Verdana, sans-serif" font-size="12" fill="#9AA6BE">하나의 계정, 하나의 데이터로 교육·인사·공급망·고객을 잇는다</text>
+
+  <!-- pipeline: LMS -> HR -> SCM -> CRM -->
+  <g font-family="Verdana, sans-serif">
+    <g>
+      <rect x="32" y="88" width="180" height="66" rx="10" fill="#121A2E" stroke="#E8B44A" stroke-width="1.5"/>
+      <text x="122" y="116" text-anchor="middle" font-size="15" fill="#F4F6FB">LMS</text>
+      <text x="122" y="136" text-anchor="middle" font-size="11" fill="#9AA6BE">강의 · 결제 · 수료증</text>
+    </g>
+    <g>
+      <rect x="240" y="88" width="180" height="66" rx="10" fill="#121A2E" stroke="#232E47"/>
+      <text x="330" y="116" text-anchor="middle" font-size="15" fill="#F4F6FB">HR</text>
+      <text x="330" y="136" text-anchor="middle" font-size="11" fill="#9AA6BE">전자결재 · 급여</text>
+    </g>
+    <g>
+      <rect x="448" y="88" width="180" height="66" rx="10" fill="#121A2E" stroke="#232E47"/>
+      <text x="538" y="116" text-anchor="middle" font-size="15" fill="#F4F6FB">SCM</text>
+      <text x="538" y="136" text-anchor="middle" font-size="11" fill="#9AA6BE">계약 · 자재</text>
+    </g>
+    <g>
+      <rect x="656" y="88" width="180" height="66" rx="10" fill="#121A2E" stroke="#232E47"/>
+      <text x="746" y="116" text-anchor="middle" font-size="15" fill="#F4F6FB">CRM</text>
+      <text x="746" y="136" text-anchor="middle" font-size="11" fill="#9AA6BE">견적 · 세금계산서</text>
+    </g>
+    <g stroke="#5C6A87" stroke-width="1.5" fill="none">
+      <path d="M212 121 L238 121" marker-end="url(#a2)"/>
+      <path d="M420 121 L446 121" marker-end="url(#a2)"/>
+      <path d="M628 121 L654 121" marker-end="url(#a2)"/>
+    </g>
+    <defs><marker id="a2" markerWidth="8" markerHeight="8" refX="6" refY="3" orient="auto"><path d="M0 0 L6 3 L0 6 z" fill="#5C6A87"/></marker></defs>
+  </g>
+
+  <!-- guardrails -->
+  <text x="32" y="196" font-family="Verdana, sans-serif" font-size="12" fill="#5C6A87" letter-spacing="1">GLOBAL GUARDRAILS — 절대 어기지 않는 원칙</text>
+  <g font-family="Verdana, sans-serif" font-size="12">
+    <g transform="translate(32,210)">
+      <text x="0" y="14" fill="#E8B44A">✓</text><text x="18" y="14" fill="#E5E9F2">수료 판정은 서버가 한다</text>
+      <text x="18" y="30" fill="#5C6A87" font-size="10.5">클라이언트 신뢰 금지 · wall-clock 검증</text>
+    </g>
+    <g transform="translate(300,210)">
+      <text x="0" y="14" fill="#E8B44A">✓</text><text x="18" y="14" fill="#E5E9F2">환불은 자동 계산된다</text>
+      <text x="18" y="30" fill="#5C6A87" font-size="10.5">수강률 차등 33/50% · 수동 예외 없음</text>
+    </g>
+    <g transform="translate(568,210)">
+      <text x="0" y="14" fill="#E8B44A">✓</text><text x="18" y="14" fill="#E5E9F2">개인정보는 최소 수집</text>
+      <text x="18" y="30" fill="#5C6A87" font-size="10.5">주민번호 미수집 · AES-256-GCM</text>
+    </g>
+    <g transform="translate(32,254)">
+      <text x="0" y="14" fill="#E8B44A">✓</text><text x="18" y="14" fill="#E5E9F2">수료증은 위조 불가</text>
+      <text x="18" y="30" fill="#5C6A87" font-size="10.5">HMAC 서명 + QR 공개 진위조회</text>
+    </g>
+    <g transform="translate(300,254)">
+      <text x="0" y="14" fill="#E8B44A">✓</text><text x="18" y="14" fill="#E5E9F2">부정수료 4중 방어</text>
+      <text x="18" y="30" fill="#5C6A87" font-size="10.5">watch · heartbeat · visibility · activity</text>
+    </g>
+    <g transform="translate(568,254)">
+      <text x="0" y="14" fill="#E8B44A">✓</text><text x="18" y="14" fill="#E5E9F2">카피는 사실로만</text>
+      <text x="18" y="30" fill="#5C6A87" font-size="10.5">과장 금지 · 수치 · ISO 조항 근거</text>
+    </g>
+  </g>
+</svg>
