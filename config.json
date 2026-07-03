@@ -1,0 +1,10 @@
+{
+  "project_id_env": "GCP_PROJECT_ID",
+  "project_id_default": "iginsights",
+  "dataset": "ig_insights",
+  "location": "US",
+  "api_version": "v25.0",
+  "funnel_keywords": ["로드맵"],
+  "comments_recent_media": 25,
+  "media_page_limit": 200
+}

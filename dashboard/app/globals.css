@@ -1,0 +1,39 @@
+* { box-sizing: border-box; margin: 0; padding: 0; }
+
+body {
+  font-family: "Pretendard", -apple-system, "Segoe UI", "Malgun Gothic", sans-serif;
+  background: #0f1115;
+  color: #e8eaed;
+  padding: 24px;
+}
+
+h1 { font-size: 22px; margin-bottom: 4px; }
+h2 { font-size: 15px; color: #9aa0a6; margin: 28px 0 12px; font-weight: 600; }
+
+.sub { color: #9aa0a6; font-size: 13px; }
+
+.cards { display: grid; grid-template-columns: repeat(auto-fit, minmax(160px, 1fr)); gap: 12px; margin-top: 16px; }
+.card {
+  background: #1a1d24; border: 1px solid #2a2e37; border-radius: 12px;
+  padding: 16px;
+}
+.card .label { font-size: 12px; color: #9aa0a6; }
+.card .value { font-size: 26px; font-weight: 700; margin-top: 6px; }
+.card.accent { border-color: #4f8cff; }
+.card.accent .value { color: #4f8cff; }
+
+.panel {
+  background: #1a1d24; border: 1px solid #2a2e37; border-radius: 12px;
+  padding: 16px; margin-top: 8px;
+}
+
+.error {
+  background: #2a1a1a; border: 1px solid #5c2b2b; border-radius: 12px;
+  padding: 16px; margin-top: 16px; color: #f28b82; font-size: 14px;
+  white-space: pre-wrap;
+}
+
+table.list { width: 100%; border-collapse: collapse; font-size: 13px; }
+table.list th, table.list td { text-align: left; padding: 8px 6px; border-bottom: 1px solid #2a2e37; }
+table.list th { color: #9aa0a6; font-weight: 500; }
+table.list a { color: #4f8cff; text-decoration: none; }

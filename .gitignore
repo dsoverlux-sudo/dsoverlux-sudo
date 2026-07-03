@@ -1,0 +1,23 @@
+# 비밀값 — 절대 커밋 금지
+.secrets/
+*token*.txt
+*-key.json
+iginsights-key.json
+.env
+.env.local
+.env*.local
+
+# 산출물·로그
+output/
+*.log
+*.csv
+
+# Python
+__pycache__/
+*.pyc
+.venv/
+
+# Node / Next.js
+node_modules/
+.next/
+.vercel/
